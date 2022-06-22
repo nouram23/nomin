@@ -1,0 +1,110 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#components-layout-demo-side .logo {
+  height: 32px;
+  margin: 8px;
+  background: rgba(57, 163, 244);
+}
+
+.site-layout .site-layout-background {
+  background: rgb(57, 163, 244);
+}
+
+.logo {
+  height: 64px;
+
+  background: rgb(57, 163, 244);
+}
+
+.ant-layout-sider-children {
+  background: rgb(255, 255, 255);
+}
+
+.ant-layout-sider-trigger {
+background: rgb(57, 163, 244);
+}
+.ant-modal-header{
+  padding: 10px 24px;
+}
+.ant-modal-close-x {
+  font-size: 15px;
+  line-height: 35px;
+}
+
+
+/* this is your style */
+.marginRight-8 {
+  margin-right: 8px;
+}
+.marginLeft-8 {
+  margin-left: 8px;
+}
+
+.marginWithSelect {
+  margin-right: 8px;
+  width: 200px;
+}
+
+.txtLabel {
+  padding-top: '14px';
+  padding-right: '8px' 
+}
+.topPadding-16 {
+  padding-top: 16px;
+}
+
+.greenButton {
+  background-color: #63A935;
+  color: white;
+  margin-left: 8px;
+}
+
+.blueButton {
+  background-color: #319bec;
+  color: white;
+  margin-left: 8px;
+}
+
+
+
+.Uploadbutton {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  height: 32px;
+  color: white;
+  padding: 1px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+.custom-file-input::-webkit-file-upload-button {
+  display: none;
+}
+.custom-file-input::before {
+  content: 'Excel файл оруулах';
+  display: inline-block;
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 500;
+  font-size: 10pt;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
