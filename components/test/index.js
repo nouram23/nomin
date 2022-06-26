@@ -1,3 +1,4 @@
+import React from "react";
 import { Table } from "antd";
 import { FaSun, FaMoon } from "react-icons/fa";
 const columns = [
@@ -50,6 +51,15 @@ const columns = [
 ];
 
 export default function test({ test }) {
+  // const [test, setTest] = React.useState([]);
+
+  // React.useEffect(async () => {
+  //   const result = await fetch("http://localhost:3000/api/test");
+  //   const data = await result.json();
+
+  //   setTest(data);
+  // }, []);
+
   console.log(test);
   const data = test.map((e, i) => ({
     key: i,
@@ -126,11 +136,4 @@ export default function test({ test }) {
       </div>
     </>
   );
-}
-export async function getStaticProps(context) {
-  const res = await fetch("http://localhost:3000/api/test");
-  const test = await res.json();
-  return {
-    props: { test }, // will be passed to the page component as props
-  };
 }
